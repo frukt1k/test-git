@@ -1,0 +1,44 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.logo {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 94px;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 65px;
+  margin-bottom: 40px;
+}
+
+.color-text {
+  color: #4bcaff;
+}
+.nav-nenu-item {
+  font-family: "Roboto",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 32px;
+  display:inline-block ;
+  border-left:1px solid #fff;
+  transition: 0.5s;
+}
+.nav-menu{
+    background-color: #35444F;
+    text-align: center;
+
+}
+.nav-nenu-item:last-child{
+    border-right:1px solid #fff;
+}
+.nav-nenu-item:hover{
+    background-color: #222F3A;
+}
