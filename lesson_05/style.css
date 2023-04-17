@@ -106,7 +106,7 @@
   color: #0C1927;
   text-decoration: none;
   margin-right: 40px;
-  transition: 0.3s;
+  transition: 0.5s;
   
 }
 .footer-menu-item:last-child{
@@ -114,7 +114,7 @@
 }
 .footer-menu-item:hover{
   color: #3181A6;
-  border-bottom: solid;
+  text-decoration: underline;
 }
 .copyright-footer{
   display: inline-block;
