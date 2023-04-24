@@ -1,24 +1,33 @@
 body {
-  background-image: url(img/background\ 1.png);
+  height: 100vh;
+  background-image: url("images/main-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
 }
-header{
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
+header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .logo-container {
   display: flex;
   align-items: center;
-  text-decoration: none;
   gap: 8px;
+  text-decoration: none;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .logo-text > span {
@@ -28,28 +37,83 @@ header{
   font-size: 29px;
   line-height: 29px;
   color: #ffffff;
+  /* transition: 0.3s; */
 }
+
 .logo-text > span:last-child {
   font-size: 18px;
   line-height: 18px;
 }
-.logo-text{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    text-transform: uppercase;
+
+.logo-container:hover .logo-text > span {
+  color: #f26522;
 }
-.contact > a{
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    color: #FFFFFF;  
-    text-decoration: none;
-    display: block;
-    text-align: right;
+
+.logo-img-hover {
+  display: none;
 }
-.contact > a:first-child{
-    margin-bottom: 13px;
+.logo-container:hover .logo-img-hover {
+  display: inline-block;
+}
+.logo-container:hover .logo-img {
+  display: none;
+}
+
+.contacts > a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  transition: 0.3s;
+}
+
+.contacts > a:first-child {
+  margin-bottom: 13px;
+}
+
+.contacts > a:hover {
+  color: #f26522;
+}
+
+.tour-card h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.tour-card:hover h2 {
+  color: #f26522;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+  justify-content: space-between;
+}
+
+footer {
+  padding: 15px 0;
+  margin-top: 15px;
+}
+
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
 }
