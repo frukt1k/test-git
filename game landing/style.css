@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
+.hero-bg {
+  background-image: url(img/bg-image-main-screen.jpg);
+  background-position: 0 -200px;
+}
+.bg-img {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay-shadow {
+  height: 100vh;
+  background: radial-gradient(
+    189.96% 61.18% at 50% 38.82%,
+    rgba(255, 181, 72, 0) 0%,
+    rgba(52, 44, 29, 0.80319) 73.22%,
+    #08090a 99.74%
+  );
+  position: relative;
+}
+.countainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+.navbar-menu > a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar-menu > a:not(:last-child) {
+  margin-right: 30px;
+}
+.header-links > a:first-child {
+  margin-right: 15px;
+}
+.hero-section {
+  text-align: center;
+  padding-top: 20vh;
+  
+}
+.hero-section > h1,
+.hero-section > h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-section > h1 {
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+}
+
+.hero-section > h2 {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.main-btn{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #1A1917;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+.hero-btn{
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+.hero-link {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
