@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 .hero-bg {
   background-image: url(img/bg-image-main-screen.jpg);
 }
@@ -112,6 +115,81 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+.sub-section {
+  background-image: url(img/bg-image-newsletter.png);
+  padding-top: 20vh;
+}
+.section-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.section-title::before {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  display: block;
+}
+.sub-wrapper > .section-title::before {
+  content: "Want to stay in touch?";
+  display: block;
+}
+.section-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 45px;
+}
+.sub-section > .countainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-wrapper {
+  width: 55%;
+}
+.sub-form {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-form > .main-btn {
+  padding: 20px 70px;
+  border: none;
+  cursor: pointer;
+}
+.form-email {
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  border: none;
+  width: 55%;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffb548;
+}
+.form-email::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
 @media (max-width: 1300px) {
   .burger-menu {
     width: 75%;
@@ -136,7 +214,7 @@ header {
     width: 85%;
   }
 }
-@media  (max-width: 800px) {
+@media (max-width: 800px) {
   .hero-bg {
     background-position: -400px 0;
   }
@@ -164,8 +242,6 @@ header {
     box-sizing: border-box;
     left: 0;
   }
-
-  
 
   header {
     padding-top: 10px;
@@ -218,4 +294,48 @@ header {
     padding: 13px 10px;
     margin-top: 12px;
   }
+  .section-title {
+    font-size: 33px;
+    line-height: 33px;
+  }
+  .section-title::before {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .section-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .sub-section > .countainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sub-wrapper {
+    width: 60%;
+  }
+  .sub-img {
+    width: 210px;
+    height: 350px;
+    transform: translateX(-60px);
+  }
+  .sub-form {
+    padding: 0 15px;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -80%;
+  }
+  .subscribe-section > .container{
+    position: relative;
+    justify-content: center;
+  
+  }
+  .form-email {
+    width: auto;
+  } 
 }

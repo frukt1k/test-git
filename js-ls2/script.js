@@ -1,0 +1,6 @@
+let f= Number(prompt('ведіть перше число '))
+let s= Number(prompt('ведіть друге число '))
+alert(f + s)
+alert(f - s)
+alert(f * s)
+alert(f / s)
