@@ -1,0 +1,10 @@
+.circle {
+  border-radius: 50%;
+  background-color: red;
+}
+
+#all_circles {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
